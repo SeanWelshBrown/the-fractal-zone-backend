@@ -20,3 +20,514 @@ Migrating to CreateFractals (20200302151024)
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8597755228398456960)[0m
   [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/favicon.ico" for ::1 at 2020-03-02 13:42:07 -0500
+Started GET "/favicon.ico" for ::1 at 2020-03-02 13:45:58 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-02 13:46:21 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.6ms | Allocations: 201)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 1263)
+
+
+Started GET "/users" for ::1 at 2020-03-02 13:47:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-03-02 13:52:28 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"swb258", "password"=>"[FILTERED]", "user"=>{"username"=>"swb258"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (3.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swb258"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swb258"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Completed 406 Not Acceptable in 1385ms (Views: 0.1ms | ActiveRecord: 14.0ms | Allocations: 794197)
+
+
+Started GET "/" for ::1 at 2020-03-02 13:57:43 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.1ms | Allocations: 197)
+Completed 200 OK in 18ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 1074)
+
+
+Started GET "/" for ::1 at 2020-03-02 13:57:56 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.5ms | Allocations: 317)
+Completed 200 OK in 19ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 1599)
+
+
+Started GET "/" for ::1 at 2020-03-02 13:57:57 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 25.2ms | Allocations: 196)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 734)
+
+
+Started POST "/users" for ::1 at 2020-03-02 13:58:06 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"swb258", "password"=>"[FILTERED]", "user"=>{"username"=>"swb258"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swb258"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swb258"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Completed 406 Not Acceptable in 226ms (Views: 0.1ms | ActiveRecord: 8.6ms | Allocations: 188395)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/users" for ::1 at 2020-03-02 14:00:14 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"swb258", "password"=>"[FILTERED]", "user"=>{"username"=>"swb258"}}
+Completed 500 Internal Server Error in 154365ms (ActiveRecord: 3.9ms | Allocations: 115948)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:10:in `create'
+Started GET "/" for ::1 at 2020-03-02 14:02:59 -0500
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.7ms | Allocations: 317)
+Completed 200 OK in 19ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 1603)
+
+
+Started POST "/users" for ::1 at 2020-03-02 14:03:08 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"swb258", "password"=>"[FILTERED]", "user"=>{"username"=>"swb258"}}
+Completed 500 Internal Server Error in 8832ms (ActiveRecord: 4.2ms | Allocations: 40653)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-03-02 14:03:52 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.7ms | Allocations: 317)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 1598)
+
+
+Started POST "/users" for ::1 at 2020-03-02 14:04:03 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"swb258", "password"=>"[FILTERED]", "user"=>{"username"=>"swb258"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swb258"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swb258"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Completed 406 Not Acceptable in 249ms (Views: 0.1ms | ActiveRecord: 10.2ms | Allocations: 188397)
+
+
+Started POST "/users" for ::1 at 2020-03-02 14:06:07 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"swb258", "password"=>"[FILTERED]", "user"=>{"username"=>"swb258"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swb258"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (3.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "swb258"], ["password_digest", "$2a$12$FGiipWGMeMReVFw21COEe.Arr4YUM1GiJUEmR8fuOEc0.gOtJqtU2"], ["created_at", "2020-03-02 19:06:07.523016"], ["updated_at", "2020-03-02 19:06:07.523016"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "swb258"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Completed 500 Internal Server Error in 255ms (ActiveRecord: 13.3ms | Allocations: 8085)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/application_controller.rb:11:in `decoded_token'
+app/controllers/application_controller.rb:23:in `current_user'
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2020-03-02 14:10:15 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"swb258", "password"=>"[FILTERED]", "user"=>{"username"=>"swb258"}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 58166ms (ActiveRecord: 3.7ms | Allocations: 65859)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:10:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test"], ["password_digest", "$2a$12$oWM.NSQ8JomrX3vLioEY4.BPXF3OuUWnjUNhwdU3ivJL49AEgNgTG"], ["created_at", "2020-03-02 19:13:54.619538"], ["updated_at", "2020-03-02 19:13:54.619538"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/login" for ::1 at 2020-03-02 14:16:44 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "user"=>{"username"=>"test"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `login'
+Completed 500 Internal Server Error in 244ms (ActiveRecord: 9.5ms | Allocations: 4649)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/application_controller.rb:11:in `decoded_token'
+app/controllers/application_controller.rb:23:in `current_user'
+app/controllers/users_controller.rb:24:in `login'
+Started POST "/users" for ::1 at 2020-03-02 14:18:46 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"swb258", "password"=>"[FILTERED]", "user"=>{"username"=>"swb258"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swb258"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swb258"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Completed 406 Not Acceptable in 432ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 185174)
+
+
+Started GET "/" for ::1 at 2020-03-02 14:19:42 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.0ms | Allocations: 317)
+Completed 200 OK in 21ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 1595)
+
+
+Started GET "/" for ::1 at 2020-03-02 14:19:43 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.5ms | Allocations: 191)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 726)
+
+
+Started GET "/" for ::1 at 2020-03-02 14:19:43 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sean/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 8)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 237)
+
+
+Started GET "/users" for ::1 at 2020-03-02 14:19:46 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-03-02 14:20:35 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"swb258", "password"=>"[FILTERED]", "user"=>{"username"=>"swb258"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swb258"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 107149ms (ActiveRecord: 6.6ms | Allocations: 57679)
+
+
+Started POST "/users" for ::1 at 2020-03-02 14:22:22 -0500
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:12:in `create'
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"test2", "password"=>"[FILTERED]", "user"=>{"username"=>"test2"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test2"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test2"], ["password_digest", "$2a$12$EnK2hq4i.FSQRWHoYMzLp.AdAIMXNZTtt34GVxGDfE84DZFH4aEdS"], ["created_at", "2020-03-02 19:22:24.313741"], ["updated_at", "2020-03-02 19:22:24.313741"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (8.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test2"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Completed 500 Internal Server Error in 390ms (ActiveRecord: 21.6ms | Allocations: 1520806)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/application_controller.rb:11:in `decoded_token'
+app/controllers/application_controller.rb:23:in `current_user'
+app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/users" for ::1 at 2020-03-02 14:25:57 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"test3", "password"=>"[FILTERED]", "user"=>{"username"=>"test3"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test3"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test3"], ["password_digest", "$2a$12$ZoxVKcfQ/cHagN/WWBck1uSEw1dUWsY0WKZw1misqH9ARhUc7Hp36"], ["created_at", "2020-03-02 19:25:57.932936"], ["updated_at", "2020-03-02 19:25:57.932936"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test3"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Completed 500 Internal Server Error in 345ms (ActiveRecord: 5.4ms | Allocations: 1183753)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/application_controller.rb:11:in `decoded_token'
+app/controllers/application_controller.rb:23:in `current_user'
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2020-03-02 14:26:59 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"test4", "password"=>"[FILTERED]", "user"=>{"username"=>"test4"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test4"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test4"], ["password_digest", "$2a$12$8aXpQczIDONCqTDxeV3C7OLvlgxSrL8Ac5XaciFIZKopE6.A9Gnqm"], ["created_at", "2020-03-02 19:27:00.922971"], ["updated_at", "2020-03-02 19:27:00.922971"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test4"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (15.57ms)
+Completed 201 Created in 394ms (Views: 40.4ms | ActiveRecord: 12.1ms | Allocations: 2002819)
+
+
+Started POST "/users" for ::1 at 2020-03-02 14:29:30 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"test5", "password"=>"[FILTERED]", "user"=>{"username"=>"test5"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test5"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test5"], ["password_digest", "$2a$12$xZbD1JIpaugCo3scK1gDpewV7/Uo74/73wkp.26G7KVFm1oGWb/22"], ["created_at", "2020-03-02 19:29:30.727503"], ["updated_at", "2020-03-02 19:29:30.727503"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test5"], ["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.69ms)
+Completed 201 Created in 339ms (Views: 6.8ms | ActiveRecord: 5.4ms | Allocations: 1469537)
+
+
+Started POST "/users" for ::1 at 2020-03-02 14:30:08 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"test6", "password"=>"[FILTERED]", "user"=>{"username"=>"test6"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test6"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test6"], ["password_digest", "$2a$12$/oq0vmAYthY/50Uj.TfE8.glMIDt5mFRN/hTgEsukSfeyiLv..iuW"], ["created_at", "2020-03-02 19:30:08.920151"], ["updated_at", "2020-03-02 19:30:08.920151"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test6"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.57ms)
+Completed 201 Created in 339ms (Views: 6.5ms | ActiveRecord: 5.3ms | Allocations: 1469537)
+
+
+Started POST "/users" for ::1 at 2020-03-02 14:30:42 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"test7", "password"=>"[FILTERED]", "user"=>{"username"=>"test7"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test7"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test7"], ["password_digest", "$2a$12$WkKXH.HxGFmNaNQ1PJQwT.XYp5WPp8CbVyvbYfxllgdsi/uH1AWr6"], ["created_at", "2020-03-02 19:30:43.167505"], ["updated_at", "2020-03-02 19:30:43.167505"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test7"], ["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.74ms)
+Completed 201 Created in 352ms (Views: 14.7ms | ActiveRecord: 5.8ms | Allocations: 1472467)
+
+
+Started POST "/users" for ::1 at 2020-03-02 14:31:28 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"test8", "password"=>"[FILTERED]", "user"=>{"username"=>"test8"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test8"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (6.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test8"], ["password_digest", "$2a$12$8jkxw/Yoid73ELjlLML9KuKQpOPX0obvbrl4.2XMjH1wTXZwvU37e"], ["created_at", "2020-03-02 19:31:30.034553"], ["updated_at", "2020-03-02 19:31:30.034553"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test8"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.84ms)
+Completed 201 Created in 429ms (Views: 17.6ms | ActiveRecord: 18.4ms | Allocations: 2071441)
+
+
+Started POST "/login" for ::1 at 2020-03-02 14:37:11 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"swb258", "password"=>"[FILTERED]", "user"=>{"username"=>"swb258"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swb258"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.57ms)
+Completed 202 Accepted in 260ms (Views: 5.6ms | ActiveRecord: 1.0ms | Allocations: 422644)
+
+
+Started POST "/login" for ::1 at 2020-03-02 14:40:37 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"swb258", "password"=>"[FILTERED]", "user"=>{"username"=>"swb258"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swb258"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.89ms)
+Completed 202 Accepted in 268ms (Views: 14.8ms | ActiveRecord: 1.1ms | Allocations: 343514)
+
+
+Started GET "/persist" for ::1 at 2020-03-02 14:41:10 -0500
+Processing by UsersController#persist as */*
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (17.39ms)
+Completed 200 OK in 307ms (Views: 60.7ms | ActiveRecord: 2.3ms | Allocations: 651372)
+
+
+Started GET "/persist" for ::1 at 2020-03-02 14:42:00 -0500
+Processing by UsersController#persist as */*
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25:in `current_user'
+  [1m[36mCACHE User Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.23ms)
+Completed 200 OK in 249ms (Views: 73.5ms | ActiveRecord: 6.3ms | Allocations: 571956)
+
+
+Started POST "/users" for ::1 at 2020-03-02 14:42:29 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"test9", "password"=>"[FILTERED]", "user"=>{"username"=>"test9"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test9"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test9"], ["password_digest", "$2a$12$qBunITS3VHvLB/g20BRSPuTtsZ3H7NrInFDIS/UVlpKZM7J2IAyS6"], ["created_at", "2020-03-02 19:42:30.200328"], ["updated_at", "2020-03-02 19:42:30.200328"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test9"], ["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.59ms)
+Completed 201 Created in 347ms (Views: 6.5ms | ActiveRecord: 5.3ms | Allocations: 1469534)
+
+
+Started GET "/persist" for ::1 at 2020-03-02 14:42:43 -0500
+Processing by UsersController#persist as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.48ms)
+Completed 200 OK in 81ms (Views: 42.7ms | ActiveRecord: 1.6ms | Allocations: 571592)
+
+
