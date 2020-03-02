@@ -1,0 +1,2 @@
+class FractalController < ApplicationController
+end
