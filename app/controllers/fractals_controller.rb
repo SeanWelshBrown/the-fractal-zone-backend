@@ -3,7 +3,11 @@ class FractalsController < ApplicationController
 
   def create 
     @fractal = @user.fractals.create(fractal_params)
-    render json: @fractal
+    if @fractal.valid?
+      render json: @fractal
+    else
+      render json: {error: "All forms must be filled"}
+    end
   end
 
   def index
