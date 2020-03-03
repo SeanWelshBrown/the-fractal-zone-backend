@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get '/persist', to: 'users#persist'
   get '/profile', to: 'users#profile'
 
-  resources :fractals, only: [:create]
+  resources :fractals, only: [:index, :create]
 
 end

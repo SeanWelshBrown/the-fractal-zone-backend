@@ -1,3 +1,3 @@
 class FractalSerializer < ActiveModel::Serializer
-  attributes :name, :formula, :type
+  attributes :id, :name, :image, :rule, :fractal_type, :user_id
 end
