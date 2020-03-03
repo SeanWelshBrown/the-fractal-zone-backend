@@ -1,5 +1,5 @@
 class FractalsController < ApplicationController
-  before_action :authorized, only: [:create]
+  before_action :authorized, only: [:create, :destroy]
 
   def create 
     @fractal = @user.fractals.create(fractal_params)
@@ -13,6 +13,11 @@ class FractalsController < ApplicationController
   def index
     @fractals = Fractal.all 
     render json: @fractals
+  end
+
+  def destroy 
+    @fractal = Fractal.find_by(id: params[:id])
+    @fractal.destroy
   end
 
   private
