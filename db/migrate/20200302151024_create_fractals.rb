@@ -3,8 +3,7 @@ class CreateFractals < ActiveRecord::Migration[6.0]
     create_table :fractals do |t|
       t.string :name
       t.text :image
-      t.string :rule
-      t.string :fractal_type
+      t.text :parameters
       t.integer :user_id
 
       t.timestamps

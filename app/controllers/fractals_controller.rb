@@ -11,8 +11,11 @@ class FractalsController < ApplicationController
   end
 
   def index
-    @fractals = Fractal.all 
-    render json: @fractals
+    @fractals = Fractal.all
+    newFractals = @fractals.each do |fractal|
+      fractal.parameters = fractal.parameters.gsub! '=>', ': '
+    end
+    render json: newFractals
   end
 
   def destroy 
@@ -22,7 +25,19 @@ class FractalsController < ApplicationController
 
   private
   def fractal_params
-    params.permit(:name, :image, :rule, :fractal_type)
+    params.permit(
+      :name, 
+      :image, 
+      :parameters [
+        :theta,
+        :length,
+        :rules => [
+          :axiom,
+          :setA,
+          :setB
+        ]
+      ]
+    )
   end
 
 end

@@ -1,5 +1,5 @@
 class FractalSerializer < ActiveModel::Serializer
-  attributes :id, :name, :image, :rule, :fractal_type, :user_id, :username
+  attributes :id, :name, :image, :parameters, :user_id, :username
 
   def username
     self.object.user.username

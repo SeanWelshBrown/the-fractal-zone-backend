@@ -18,8 +18,7 @@ ActiveRecord::Schema.define(version: 2020_03_02_151024) do
   create_table "fractals", force: :cascade do |t|
     t.string "name"
     t.text "image"
-    t.string "rule"
-    t.string "fractal_type"
+    t.text "parameters"
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
