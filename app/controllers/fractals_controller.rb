@@ -28,7 +28,7 @@ class FractalsController < ApplicationController
     params.permit(
       :name, 
       :image, 
-      :parameters [
+      :parameters => [
         :theta,
         :length,
         :rules => [
