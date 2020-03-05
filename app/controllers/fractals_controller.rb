@@ -4,6 +4,7 @@ class FractalsController < ApplicationController
   def create 
     @fractal = @user.fractals.create(fractal_params)
     if @fractal.valid?
+      @fractal.parameters = @fractal.parameters.gsub! '=>', ': '
       render json: @fractal
     else
       render json: {error: "All forms must be filled"}
@@ -31,10 +32,11 @@ class FractalsController < ApplicationController
       :parameters => [
         :theta,
         :length,
+        :size,
         :rules => [
           :axiom,
-          :setA,
-          :setB
+          :setF,
+          :setG
         ]
       ]
     )
